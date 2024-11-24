@@ -1,0 +1,135 @@
+@import "../variables";
+
+// ***********  BACKGROUNDS  *********** //
+
+@mixin bg-primary {
+  background-color: $primary;
+}
+
+@mixin bg-secondary {
+  background-color: $secondary;
+}
+
+@mixin bg-info {
+  background-color: $info;
+}
+
+@mixin bg-success {
+  background-color: $success;
+}
+
+@mixin bg-warning {
+  background-color: $warning;
+}
+
+@mixin bg-failure {
+  background-color: $danger;
+}
+
+@mixin background-color($color: '') {
+  @if ($color!='') {
+    background-color: $color;
+  }
+}
+
+// ***********  IMAGE  *********** //
+
+@mixin bg-image($image: '') {
+  @if ($image!='') {
+    background-image: $image;
+  }
+}
+
+@mixin bg-image-url($url: '') {
+  @if ($url!='') {
+    background-image: url($url);
+  }
+}
+
+// ***********  SIZES  *********** //
+
+@mixin bg-size($size, $important: false) {
+  @if ($size) {
+    @if ($important) {
+      background-size: $size !important;
+    }
+    background-size: $size;
+  }
+}
+
+@mixin bg-size-cover {
+  @include bg-size(cover);
+}
+
+@mixin bg-size-contain {
+  @include bg-size(contain);
+}
+
+@mixin bg-size-auto {
+  @include bg-size(auto);
+}
+
+// ***********  ATTACHMENT  *********** //
+
+@mixin bg-attachment($attachment: '') {
+  @if ($attachment!='') {
+    background-attachment: $attachment;
+  }
+}
+
+@mixin bg-attachment-scroll {
+  @include bg-attachment(scroll);
+}
+
+@mixin bg-attachment-fixed {
+  @include bg-attachment(fixed);
+}
+
+@mixin bg-attachment-local {
+  @include bg-attachment(local);
+}
+
+// ***********  ATTACHMENT  *********** //
+
+@mixin bg-origin($origin) {
+  @if ($origin) {
+    background-origin: $origin;
+  }
+}
+
+// ***********  POSITION  *********** //
+
+@mixin bg-position($position) {
+  @if ($position) {
+    background-position: $position;
+  }
+}
+
+@mixin bg-position-x($position, $important: false) {
+  @if ($position) {
+    @if ($important) {
+      background-position-x: $position !important;
+    }
+    background-position-x: $position;
+  }
+}
+
+@mixin bg-position-y($position, $important: false) {
+  @if ($position) {
+    @if ($important) {
+      background-position-y: $position !important;
+    }
+    background-position-y: $position;
+  }
+}
+
+// ***********  REPEAT  *********** //
+
+@mixin bg-repeat($repeat, $important: false) {
+  @if ($repeat) {
+    @if ($important) {
+      background-repeat: $repeat !important;
+    }
+    background-repeat: $repeat;
+  }
+}

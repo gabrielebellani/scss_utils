@@ -1,0 +1,109 @@
+
+// ***********  FLEX  *********** //
+
+@mixin flex-column {
+  flex-direction: column;
+}
+
+@mixin flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+@mixin flex-row {
+  flex-direction: row;
+}
+
+@mixin flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+
+@mixin align-content-start {
+  align-content: flex-start;
+}
+
+@mixin align-content-end {
+  align-content: flex-end;
+}
+
+@mixin align-content-center {
+  align-content: center;
+}
+
+@mixin align-content-between {
+  align-content: space-between;
+}
+
+@mixin align-content-around {
+  align-content: space-around;
+}
+
+@mixin align-content-stretch {
+  align-content: stretch;
+}
+
+
+@mixin align-content-baseline {
+  align-content: baseline;
+}
+
+@mixin align-items-center {
+  align-items: center;
+}
+
+@mixin align-items-start {
+  align-items: flex-start;
+}
+
+@mixin align-items-end {
+  align-items: flex-end;
+}
+
+@mixin align-items-stretch {
+  align-items: stretch;
+}
+
+@mixin align-items-baseline {
+  align-items: baseline;
+}
+
+@mixin justify-content-start {
+  justify-content: flex-start;
+}
+
+@mixin justify-content-end {
+  justify-content: flex-end;
+}
+
+@mixin justify-content-center {
+  justify-content: center;
+}
+
+@mixin justify-content-between {
+  justify-content: space-between;
+}
+
+@mixin justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+@mixin justify-content-around {
+  justify-content: space-around;
+}
+
+@mixin set-flex($value) {
+  flex: $value;
+}
+
+@mixin flex-wrap($value) {
+  flex-wrap: $value;
+}
+
+@mixin flex-direction($value) {
+  flex-direction: $value;
+}
+
+@mixin flex-flow($row, $wrap) {
+  @include flex-direction($row);
+  @include flex-wrap($wrap);
+}

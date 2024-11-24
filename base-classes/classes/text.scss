@@ -1,0 +1,9 @@
+@import "src/theme/styles/_mixins";
+
+.no-wrap {
+  @include text-nowrap
+}
+
+.text-center {
+  @include text-center
+}

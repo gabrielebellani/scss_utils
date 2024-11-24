@@ -1,0 +1,42 @@
+@import "src/theme/styles/utilities";
+
+@mixin absolute {
+  position: absolute;
+}
+
+@mixin fixed {
+  position: fixed;
+}
+
+@mixin relative {
+  position: relative;
+}
+
+@mixin sticky {
+  position: sticky;
+}
+
+@mixin static {
+  position: static;
+}
+
+@mixin top($top: 0) {
+  top: add-px-unit($top);
+}
+
+@mixin bottom($bottom: 0) {
+  bottom: add-px-unit($bottom);
+}
+
+@mixin left($left: 0) {
+  left: add-px-unit($left);
+}
+
+@mixin right($right: 0) {
+  right: add-px-unit($right);
+}
+
+@mixin zIndex($zIndex) {
+  z-index: $zIndex;
+}
+

@@ -1,0 +1,10 @@
+
+// ***********  CURSORS  *********** //
+
+@mixin cursor-pointer {
+  cursor: pointer;
+}
+
+@mixin cursor-not-allowed {
+  cursor: not-allowed;
+}

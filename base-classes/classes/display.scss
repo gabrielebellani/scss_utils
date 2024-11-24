@@ -1,0 +1,81 @@
+@import "src/theme/styles/_mixins";
+
+// ***********  DISPLAY FLEX  *********** //
+.d-flex {
+  @include flex;
+}
+
+.flex-column {
+  @include flex-column;
+}
+
+.align-items-center {
+  @include align-items-center;
+}
+
+.align-items-start {
+  @include align-items-start;
+}
+
+.justify-content-center {
+  @include justify-content-center;
+}
+
+.justify-content-between {
+  @include justify-content-between;
+}
+
+.justify-content-start {
+  @include justify-content-start;
+}
+
+.justify-content-end {
+  @include justify-content-end;
+}
+
+.flex-1{
+  @include set-flex(1)
+}
+.flex-2{
+  @include set-flex(2)
+}
+.flex-3{
+  @include set-flex(3)
+}
+.flex-4{
+  @include set-flex(4)
+}
+.flex-5{
+  @include set-flex(5)
+}
+.flex-6{
+  @include set-flex(6)
+}
+.flex-7{
+  @include set-flex(7)
+}
+.flex-8{
+  @include set-flex(8)
+}
+.flex-9{
+  @include set-flex(9)
+}
+
+.flex-10{
+  @include set-flex(10)
+}
+
+
+// ***********  DISPLAY INLINE/BLOCK  *********** //
+
+.d-inline {
+  @include inline;
+}
+
+.d-block {
+  @include block;
+}
+
+.d-inline-block {
+  @include inline-block;
+}

@@ -1,0 +1,21 @@
+@import "../../variables";
+@import "../../utilities";
+
+
+// ***********  SHADOWS  *********** //
+
+@mixin backdrop {
+  box-shadow: 0 10px 20px rgba(200, 208, 216, 0.3);
+}
+
+// ***********  OPACITY  *********** //
+
+@mixin opacity($opacity: 1){
+  opacity: $opacity;
+}
+
+// *********** BACKDROP FILTERS ********** //
+
+@mixin backdrop-filter-blur($filter){
+  backdrop-filter: blur(add-px-unit($filter));
+}

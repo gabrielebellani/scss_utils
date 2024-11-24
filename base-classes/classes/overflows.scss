@@ -1,0 +1,56 @@
+@import "src/theme/styles/mixins.scss";
+
+// ***********  OVERFLOWS  *********** //
+
+.of-auto {
+  @include overflow-auto();
+}
+
+.of-hidden {
+  @include overflow-hidden();
+}
+
+.of-visible {
+  @include overflow-visible();
+}
+
+.of-scroll {
+  @include overflow-scroll();
+}
+
+// ***********  OVERFLOWS X *********** //
+
+.of-x-scroll {
+  @include overflow-x-scroll();
+}
+
+.of-x-auto {
+  @include overflow-x-auto();
+}
+
+.of-x-hidden {
+  @include overflow-x-hidden();
+}
+
+.of-x-visible {
+  @include overflow-x-visible();
+}
+
+// ***********  OVERFLOWS Y *********** //
+
+.of-y-scroll {
+  @include overflow-y-scroll();
+}
+
+.of-y-auto {
+  @include overflow-y-auto();
+}
+
+.of-y-hidden {
+  @include overflow-y-hidden();
+}
+
+.of-y-visible {
+  @include overflow-y-visible();
+}
+

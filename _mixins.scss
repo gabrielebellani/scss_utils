@@ -1,0 +1,26 @@
+@import "variables";
+
+@import "mixins/fonts";
+@import "mixins/backgrounds";
+@import "mixins/sizing";
+@import "mixins/borders";
+@import "mixins/ux";
+@import "mixins/display";
+@import "mixins/spacing";
+@import "mixins/positioning";
+@import "mixins/overflows";
+@import "mixins/lists";
+
+// ***********  OTHER RULES  *********** //
+
+@mixin textPrimaryColor {
+  color: $primary
+}
+
+@mixin textSecondaryColor {
+  color: $secondary
+}
+
+@mixin lighterText {
+  color: #737373;
+}

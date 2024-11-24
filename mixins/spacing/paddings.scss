@@ -1,0 +1,280 @@
+@import "../../variables";
+@import "../../utilities";
+
+// ***********  PADDINGS  *********** //
+
+@mixin padding($unit: px, $top: 0, $right: 0, $bottom: 0, $left: 0) {
+  padding: #{$top}#{$unit} #{$right}#{$unit} #{$bottom}#{$unit} #{$left}#{$unit};
+}
+
+@mixin padding-left($left: 0) {
+  padding-left: add-px-unit($left);
+}
+
+@mixin padding-right($right: 0, $unit: px) {
+  padding-right: #{$right}#{$unit};
+}
+
+@mixin padding-top($top: 0) {
+  padding-top: add-px-unit($top);
+}
+
+@mixin padding-bottom($bottom: 0) {
+  padding-bottom: add-px-unit($bottom);
+}
+
+@mixin padding-vertical($padding) {
+  padding-top: add-px-unit($padding);
+  padding-bottom: add-px-unit($padding);
+}
+
+@mixin padding-horizontal($horizontal) {
+  padding-left: add-px-unit($horizontal);
+  padding-right: add-px-unit($horizontal);
+}
+
+@mixin p-unset {
+  padding: unset;
+}
+
+@mixin p-0 {
+  padding: 0;
+}
+
+// All directions
+
+@mixin p-xs {
+  @include padding(px, $sp-xs, $sp-xs, $sp-xs, $sp-xs);
+}
+
+@mixin p-s {
+  @include padding(px, $sp-s, $sp-s, $sp-s, $sp-s);
+}
+
+@mixin p-m {
+  @include padding(px, $sp-m, $sp-m, $sp-m, $sp-m);
+}
+
+@mixin p-l {
+  @include padding(px, $sp-l, $sp-l, $sp-l, $sp-l);
+}
+
+@mixin p-xl {
+  @include padding($sp-xl);
+}
+
+@mixin p-x1l {
+  @include padding($sp-x1l);
+}
+
+@mixin p-x2l {
+  @include padding($sp-x2l);
+}
+
+@mixin p-x3l {
+  @include padding($sp-x3l);
+}
+
+// Padding top
+
+@mixin p-top-xs {
+  @include padding-top($sp-xs);
+}
+
+@mixin p-top-s {
+  @include padding-top($sp-s);
+}
+
+@mixin p-top-m {
+  @include padding-top($sp-m);
+}
+
+@mixin p-top-l {
+  @include padding-top($sp-l);
+}
+
+@mixin p-top-xl {
+  @include padding-top($sp-xl);
+}
+
+@mixin p-top-x1l {
+  @include padding-top($sp-x1l);
+}
+
+@mixin p-top-x2l {
+  @include padding-top($sp-x2l);
+}
+
+@mixin p-top-x3l {
+  @include padding-top($sp-x3l);
+}
+
+//Padding bottom
+
+@mixin p-bottom-xs {
+  @include padding-bottom($sp-xs);
+}
+
+@mixin p-bottom-s {
+  @include padding-bottom($sp-s);
+}
+
+@mixin p-bottom-m {
+  @include padding-bottom($sp-m);
+}
+
+@mixin p-bottom-l {
+  @include padding-bottom($sp-l);
+}
+
+@mixin p-bottom-xl {
+  @include padding-bottom($sp-xl);
+}
+
+@mixin p-bottom-x1l {
+  @include padding-bottom($sp-x1l);
+}
+
+@mixin p-bottom-x2l {
+  @include padding-bottom($sp-x2l);
+}
+
+@mixin p-bottom-x3l {
+  @include padding-bottom($sp-x3l);
+}
+
+//Padding right
+
+@mixin p-right-xs {
+  @include padding-right($sp-xs);
+}
+
+@mixin p-right-s {
+  @include padding-right($sp-s);
+}
+
+@mixin p-right-m {
+  @include padding-right($sp-m);
+}
+
+@mixin p-right-l {
+  @include padding-right($sp-l);
+}
+
+@mixin p-right-xl {
+  @include padding-right($sp-xl);
+}
+
+@mixin p-right-x1l {
+  @include padding-right($sp-x1l);
+}
+
+@mixin p-right-x2l {
+  @include padding-right($sp-x2l);
+}
+
+@mixin p-right-x3l {
+  @include padding-right($sp-x3l);
+}
+
+//Padding left
+
+@mixin p-left-xs {
+  @include padding-left($sp-xs);
+}
+
+@mixin p-left-s {
+  @include padding-left($sp-s);
+}
+
+@mixin p-left-m {
+  @include padding-left($sp-m);
+}
+
+@mixin p-left-l {
+  @include padding-left($sp-l);
+}
+
+@mixin p-left-xl {
+  @include padding-left($sp-xl);
+}
+
+@mixin p-left-x1l {
+  @include padding-left($sp-x1l);
+}
+
+@mixin p-left-x2l {
+  @include padding-left($sp-x2l);
+}
+
+@mixin p-left-x3l {
+  @include padding-left($sp-x3l);
+}
+
+//Padding horizontal
+
+@mixin p-horizontal-xs {
+  @include padding-horizontal($sp-xs);
+}
+
+@mixin p-horizontal-s {
+  @include padding-horizontal($sp-s);
+}
+
+@mixin p-horizontal-m {
+  @include padding-horizontal($sp-m);
+}
+
+@mixin p-horizontal-l {
+  @include padding-horizontal($sp-l);
+}
+
+@mixin p-horizontal-xl {
+  @include padding-horizontal($sp-xl);
+}
+
+@mixin p-horizontal-x1l {
+  @include padding-horizontal($sp-x1l);
+}
+
+@mixin p-horizontal-x2l {
+  @include padding-horizontal($sp-x2l);
+}
+
+@mixin p-horizontal-x3l {
+  @include padding-horizontal($sp-x3l);
+}
+
+//Padding vertical
+
+@mixin p-vertical-xs {
+  @include padding-vertical($sp-xs);
+}
+
+@mixin p-vertical-s {
+  @include padding-vertical($sp-s);
+}
+
+@mixin p-vertical-m {
+  @include padding-vertical($sp-m);
+}
+
+@mixin p-vertical-l {
+  @include padding-vertical($sp-l);
+}
+
+@mixin p-vertical-xl {
+  @include padding-vertical($sp-xl);
+}
+
+@mixin p-vertical-x1l {
+  @include padding-vertical($sp-x1l);
+}
+
+@mixin p-vertical-x2l {
+  @include padding-vertical($sp-x2l);
+}
+
+@mixin p-vertical-x3l {
+  @include padding-vertical($sp-x3l);
+}

@@ -1,0 +1,117 @@
+@import "../_variables.scss";
+@import "../utilities.scss";
+
+// ***********  FONTS  *********** //
+
+@mixin font-size($size) {
+  font-size: add-px-unit($size);
+}
+
+@mixin font-weight($weight: 400) {
+  font-weight: $weight;
+}
+
+@mixin font-regular {
+  @include font-weight(400);
+}
+
+@mixin decorationPrimaryUnderline {
+  text-decoration: underline;
+  text-decoration-color: $primary;
+}
+
+@mixin font-size-height-width($size: 14, $unit: px) {
+  font-size: #{$size}#{$unit};
+  height: #{$size}#{$unit};
+  width: #{$size}#{$unit};
+}
+
+@mixin color($color: '') {
+  @if ($color!='') {
+    color: $color;
+  }
+}
+
+@mixin font-success {
+  color: $success;
+}
+
+@mixin font-info {
+  color: $info;
+}
+
+@mixin font-warning {
+  color: $warning;
+}
+
+@mixin font-failure {
+  color: $danger;
+}
+
+
+@mixin font-contrast-success {
+  color: $successContrast;
+}
+
+@mixin font-contrast-info {
+  color: $infoContrast;
+}
+
+@mixin font-contrast-warning {
+  color: $warningContrast;
+}
+
+@mixin font-contrast-failure {
+  color: $dangerContrast;
+}
+
+@mixin text-center {
+  text-align: center;
+}
+
+@mixin text-left {
+  text-align: left;
+}
+
+@mixin text-right {
+  text-align: right;
+}
+
+@mixin text-justify {
+  text-align: justify;
+}
+
+@mixin text-uppercase {
+  text-transform: uppercase;
+}
+
+@mixin text-lowercase {
+  text-transform: lowercase;
+}
+
+@mixin text-capitalize {
+  text-transform: capitalize;
+}
+
+@mixin text-underline {
+  text-decoration: underline;
+}
+
+@mixin text-line-through {
+  text-decoration: line-through;
+}
+
+@mixin text-overline {
+  text-decoration: overline;
+}
+
+@mixin text-nowrap {
+  white-space: nowrap;
+}
+
+@mixin text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

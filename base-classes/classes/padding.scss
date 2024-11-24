@@ -1,0 +1,251 @@
+@import "src/theme/styles/mixins.scss";
+
+//All directions
+
+.p-0 {
+  @include p-0();
+}
+
+.p-xs {
+  @include p-xs();
+}
+
+.p-s {
+  @include p-s();
+}
+
+.p-m {
+  @include p-m();
+}
+
+.p-l {
+  @include p-l();
+}
+
+.p-xl {
+  @include p-xl();
+}
+
+.p-x1l {
+  @include p-x1l();
+}
+
+.p-x2l {
+  @include p-x2l();
+}
+
+.p-x3l {
+  @include p-x3l();
+}
+
+// Padding top
+
+.p-top-xs {
+  @include p-top-xs();
+}
+
+.p-top-s {
+  @include p-top-s();
+}
+
+.p-top-m {
+  @include p-top-m();
+}
+
+.p-top-l {
+  @include p-top-l();
+}
+
+.p-top-xl {
+  @include p-top-xl();
+}
+
+.p-top-x1l {
+  @include p-top-x1l();
+}
+
+.p-top-x2l {
+  @include p-top-x2l();
+}
+
+.p-top-x3l {
+  @include p-top-x3l();
+}
+
+// Padding bottom
+
+.p-bottom-xs {
+  @include p-bottom-xs();
+}
+
+.p-bottom-s {
+  @include p-bottom-s();
+}
+
+.p-bottom-m {
+  @include p-bottom-m();
+}
+
+.p-bottom-l {
+  @include p-bottom-l();
+}
+
+.p-bottom-xl {
+  @include p-bottom-xl();
+}
+
+.p-bottom-x1l {
+  @include p-bottom-x1l();
+}
+
+.p-bottom-x2l {
+  @include p-bottom-x2l();
+}
+
+.p-bottom-x3l {
+  @include p-bottom-x3l();
+}
+
+.p-bottom-0{
+  @include padding-bottom(0)
+}
+
+// Padding left
+
+.p-left-xs {
+  @include p-left-xs();
+}
+
+.p-left-s {
+  @include p-left-s();
+}
+
+.p-left-m {
+  @include p-left-m();
+}
+
+.p-left-l {
+  @include p-left-l();
+}
+
+.p-left-xl {
+  @include p-left-xl();
+}
+
+.p-left-x1l {
+  @include p-left-x1l();
+}
+
+.p-left-x2l {
+  @include p-left-x2l();
+}
+
+.p-left-x3l {
+  @include p-left-x3l();
+}
+
+// Padding right
+
+.p-right-xs {
+  @include p-right-xs();
+}
+
+.p-right-s {
+  @include p-right-s();
+}
+
+.p-right-m {
+  @include p-right-m();
+}
+
+.p-right-l {
+  @include p-right-l();
+}
+
+.p-right-xl {
+  @include p-right-xl();
+}
+
+.p-right-x1l {
+  @include p-right-x1l();
+}
+
+.p-right-x2l {
+  @include p-right-x2l();
+}
+
+.p-right-x3l {
+  @include p-right-x3l();
+}
+
+// Paddings horizontal
+
+.p-horizontal-xs {
+  @include p-horizontal-xs();
+}
+
+.p-horizontal-s {
+  @include p-horizontal-s();
+}
+
+.p-horizontal-m {
+  @include p-horizontal-m();
+}
+
+.p-horizontal-l {
+  @include p-horizontal-l();
+}
+
+.p-horizontal-xl {
+  @include p-horizontal-xl();
+}
+
+.p-horizontal-x1l {
+  @include p-horizontal-x1l();
+}
+
+.p-horizontal-x2l {
+  @include p-horizontal-x2l();
+}
+
+.p-horizontal-x3l {
+  @include p-horizontal-x3l();
+}
+
+// Paddings vertical
+
+.p-vertical-xs {
+  @include p-vertical-xs();
+}
+
+.p-vertical-s {
+  @include p-vertical-s();
+}
+
+.p-vertical-m {
+  @include p-vertical-m();
+}
+
+.p-vertical-l {
+  @include p-vertical-l();
+}
+
+.p-vertical-xl {
+  @include p-vertical-xl();
+}
+
+.p-vertical-x1l {
+  @include p-vertical-x1l();
+}
+
+.p-vertical-x2l {
+  @include p-vertical-x2l();
+}
+
+.p-vertical-x3l {
+  @include p-vertical-x3l();
+}
+
+.p-unset {
+  @include p-unset();
+}

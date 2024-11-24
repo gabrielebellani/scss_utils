@@ -1,0 +1,15 @@
+@import "../../variables";
+
+// ***********  ANIMATIONS  *********** //
+
+@mixin setTransition($transition: all 0.2s ease-in-out) {
+  transition: $transition;
+}
+
+@mixin setTransformOrigin($origin: center) {
+  transform-origin: $origin;
+}
+
+@mixin growAnimation($dimension: 1.02) {
+  transform: scale($dimension);
+}

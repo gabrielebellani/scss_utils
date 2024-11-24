@@ -1,0 +1,9 @@
+@import "src/theme/styles/utilities";
+@import "src/theme/styles/variables";
+
+// ***********  WORD BREAK  *********** //
+
+@mixin word-break($break) {
+  word-break: $break;
+}
+

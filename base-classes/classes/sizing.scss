@@ -1,0 +1,181 @@
+@import "src/theme/styles/_mixins.scss";
+
+// Width
+.w-100 {
+  @include width(100%);
+}
+
+.w-90 {
+  @include width(90%);
+}
+
+.w-80 {
+  @include width(80%);
+}
+
+.w-70 {
+  @include width(70%);
+}
+
+.w-60 {
+  @include width(60%);
+}
+
+.w-50 {
+  @include width(50%);
+}
+
+.w-40 {
+  @include width(40%);
+}
+
+.w-30 {
+  @include width(30%);
+}
+
+.w-20 {
+  @include width(20%);
+}
+
+.w-10 {
+  @include width(10%);
+}
+
+.w-5 {
+  @include width(5%);
+}
+
+// Min width
+.min-w-100 {
+  @include min-width(100%);
+}
+
+.min-w-90 {
+  @include min-width(90%);
+}
+
+.min-w-80 {
+  @include min-width(80%);
+}
+
+.min-w-70 {
+  @include min-width(70%);
+}
+
+.min-w-60 {
+  @include min-width(60%);
+}
+
+.min-w-50 {
+  @include min-width(50%);
+}
+
+.min-w-40 {
+  @include min-width(40%);
+}
+
+.min-w-30 {
+  @include min-width(30%);
+}
+
+.min-w-20 {
+  @include min-width(20%);
+}
+
+.min-w-10 {
+  @include min-width(10%);
+}
+
+.min-w-5 {
+  @include min-width(5%);
+}
+
+// Max width
+.mw-100 {
+  @include max-width(100%);
+}
+
+.mw-90 {
+  @include max-width(90%);
+}
+
+.mw-80 {
+  @include max-width(80%);
+}
+
+.mw-70 {
+  @include max-width(70%);
+}
+
+.mw-60 {
+  @include max-width(60%);
+}
+
+.mw-50 {
+  @include max-width(50%);
+}
+
+.mw-40 {
+  @include max-width(40%);
+}
+
+.mw-30 {
+  @include max-width(30%);
+}
+
+.mw-20 {
+  @include max-width(20%);
+}
+
+.mw-10 {
+  @include max-width(10%);
+}
+
+.mw-5 {
+  @include max-width(5%);
+}
+
+//Height
+.h-100 {
+  @include height(100%);
+}
+
+.h-90 {
+  @include height(90%);
+}
+
+.h-80 {
+  @include height(80%);
+}
+
+.h-70 {
+  @include height(70%);
+}
+
+.h-60 {
+  @include height(60%);
+}
+
+.h-50 {
+  @include height(50%);
+}
+
+.h-40 {
+  @include height(40%);
+}
+
+.h-30 {
+  @include height(30%);
+}
+
+.h-20 {
+  @include height(20%);
+}
+
+.h-10 {
+  @include height(10%);
+}
+
+.h-5 {
+  @include height(5%);
+}

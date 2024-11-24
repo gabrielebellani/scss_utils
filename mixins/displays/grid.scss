@@ -1,0 +1,11 @@
+@import "../../variables";
+
+// ***********  GRID  *********** //
+
+@mixin gap($gap: 8, $unit: px) {
+  gap: $gap+$unit;
+}
+
+@mixin align-self($align) {
+  align-self: $align;
+}

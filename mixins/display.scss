@@ -1,0 +1,34 @@
+@import "../variables";
+
+// ***********  DISPLAYS  *********** //
+
+@import "displays/flex";
+@import "displays/grid";
+
+@mixin block {
+  display: block;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin grid {
+  display: grid;
+}
+
+@mixin inline {
+  display: inline;
+}
+
+@mixin inline-block {
+  display: inline-block;
+}
+
+@mixin inline-flex {
+  display: inline-flex;
+}
+
+@mixin d-none {
+  display: none;
+}

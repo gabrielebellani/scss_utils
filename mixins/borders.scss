@@ -1,0 +1,42 @@
+@import "../variables";
+@import "../utilities.scss";
+
+// ***********  BORDERS  *********** //
+//TODO: change default borders color
+
+@mixin border-default {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+@mixin border-radius($radius: 10) {
+  border-radius: add-px-unit($radius);
+}
+
+@mixin border-side-radius($side, $radius: 10) {
+  border-#{$side}-radius: add-px-unit($radius);
+}
+
+@mixin border-top($top: 1,$type: solid, $color: $dark) {
+  border-top: add-px-unit($top) solid $color;
+}
+
+@mixin border-right($right: 1,$type: solid, $color: $dark) {
+  border-right: add-px-unit($right) solid $color;
+}
+
+@mixin border-bottom($bottom:1, $type: solid, $color: $dark) {
+  border-bottom: add-px-unit($bottom) solid $color;
+}
+
+@mixin border-left($left: 1,$type: solid, $color: $dark) {
+  border-left: add-px-unit($left) solid $color;
+}
+
+@mixin custom-border($position: all, $size: 1px, $style: solid, $color: black) {
+  @if $position == all {
+    border: add-px-unit($size) $style $color;
+  } @else {
+    border-#{$position}: add-px-unit($size) $style $color;
+  }
+}

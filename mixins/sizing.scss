@@ -1,0 +1,47 @@
+@import "../variables";
+@import "../utilities";
+
+// ***********  SIZING  *********** //
+
+@mixin wh($width: 100, $height: 100) {
+  width: add-px-unit($width);
+  height: add-px-unit($height);
+}
+
+@mixin height($height: 100) {
+  height: add-px-unit($height);
+}
+
+@mixin width($width: 100) {
+  width: add-px-unit($width);
+}
+
+@mixin min-height($height: 100) {
+  min-height: add-px-unit($height);
+}
+
+@mixin max-height($height: 100) {
+  max-height: add-px-unit($height);
+}
+
+@mixin min-width($width: 100) {
+  min-width: add-px-unit($width);
+}
+
+@mixin max-width($width: 100) {
+  max-width: add-px-unit($width);
+}
+
+@mixin height-fit-content {
+  height: fit-content;
+}
+
+@mixin width-fit-content {
+  width: fit-content;
+}
+
+// ***********  OBJECTT-FIT  *********** //
+
+@mixin object-fit($fit: cover) {
+  object-fit: $fit;
+}

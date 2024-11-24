@@ -1,0 +1,12 @@
+@function add-px-unit($value) {
+
+  @if (type-of($value) != number) {
+    @return $value;
+  }
+
+  @if (unitless($value)) {
+    @return #{$value}px;
+  } @else {
+    @return $value;
+  }
+}

@@ -1,0 +1,263 @@
+@import "src/theme/styles/mixins.scss";
+
+//All directions
+
+.m-0 {
+  @include m-0();
+}
+
+.m-xs {
+  @include m-xs();
+}
+
+.m-s {
+  @include m-s();
+}
+
+.m-m {
+  @include m-m();
+}
+
+.m-l {
+  @include m-l();
+}
+
+.m-xl {
+  @include m-xl();
+}
+
+.m-x1l {
+  @include m-x1l();
+}
+
+.m-x2l {
+  @include m-x2l();
+}
+
+.m-x3l {
+  @include m-x3l();
+}
+
+// Margin top
+
+.m-top-xs {
+  @include m-top-xs();
+}
+
+.m-top-s {
+  @include m-top-s();
+}
+
+.m-top-m {
+  @include m-top-m();
+}
+
+.m-top-l {
+  @include m-top-l();
+}
+
+.m-top-xl {
+  @include m-top-xl();
+}
+
+.m-top-x1l {
+  @include m-top-x1l();
+}
+
+.m-top-x2l {
+  @include m-top-x2l();
+}
+
+.m-top-x3l {
+  @include m-top-x3l();
+}
+
+// Padding bottom
+
+.m-bottom-xs {
+  @include m-bottom-xs();
+}
+
+.m-bottom-s {
+  @include m-bottom-s();
+}
+
+.m-bottom-m {
+  @include m-bottom-m();
+}
+
+.m-bottom-l {
+  @include m-bottom-l();
+}
+
+.m-bottom-xl {
+  @include m-bottom-xl();
+}
+
+.m-bottom-x1l {
+  @include m-bottom-x1l();
+}
+
+.m-bottom-x2l {
+  @include m-bottom-x2l();
+}
+
+.m-bottom-x3l {
+  @include m-bottom-x3l();
+}
+
+// Padding left
+
+.m-left-xs {
+  @include m-left-xs();
+}
+
+.m-left-s {
+  @include m-left-s();
+}
+
+.m-left-m {
+  @include m-left-m();
+}
+
+.m-left-l {
+  @include m-left-l();
+}
+
+.m-left-xl {
+  @include m-left-xl();
+}
+
+.m-left-x1l {
+  @include m-left-x1l();
+}
+
+.m-left-x2l {
+  @include m-left-x2l();
+}
+
+.m-left-x3l {
+  @include m-left-x3l();
+}
+
+// Padding right
+
+.m-right-xs {
+  @include m-right-xs();
+}
+
+.m-right-s {
+  @include m-right-s();
+}
+
+.m-right-m {
+  @include m-right-m();
+}
+
+.m-right-l {
+  @include m-right-l();
+}
+
+.m-right-xl {
+  @include m-right-xl();
+}
+
+.m-right-x1l {
+  @include m-right-x1l();
+}
+
+.m-right-x2l {
+  @include m-right-x2l();
+}
+
+.m-right-x3l {
+  @include m-right-x3l();
+}
+
+// Paddings horizontal
+
+.m-horizontal-xs {
+  @include m-horizontal-xs();
+}
+
+.m-horizontal-s {
+  @include m-horizontal-s();
+}
+
+.m-horizontal-m {
+  @include m-horizontal-m();
+}
+
+.m-horizontal-l {
+  @include m-horizontal-l();
+}
+
+.m-horizontal-xl {
+  @include m-horizontal-xl();
+}
+
+.m-horizontal-x1l {
+  @include m-horizontal-x1l();
+}
+
+.m-horizontal-x2l {
+  @include m-horizontal-x2l();
+}
+
+.m-horizontal-x3l {
+  @include m-horizontal-x3l();
+}
+
+// Paddings vertical
+
+.m-vertical-xs {
+  @include m-vertical-xs();
+}
+
+.m-vertical-s {
+  @include m-vertical-s();
+}
+
+.m-vertical-m {
+  @include m-vertical-m();
+}
+
+.m-vertical-l {
+  @include m-vertical-l();
+}
+
+.m-vertical-xl {
+  @include m-vertical-xl();
+}
+
+.m-vertical-x1l {
+  @include m-vertical-x1l();
+}
+
+.m-vertical-x2l {
+  @include m-vertical-x2l();
+}
+
+.m-vertical-x3l {
+  @include m-vertical-x3l();
+}
+
+.m-vertical-0 {
+  @include m-vertical-0();
+}
+
+.m-unset {
+  @include m-unset();
+}
+
+.m-auto {
+  @include m-auto();
+}
+
+.m-horizontal-auto {
+  @include m-horizontal-auto();
+}
+
+.m-vertical-auto {
+  @include m-vertical-auto();
+}
