@@ -7,14 +7,14 @@ It's _**framework independent**_ and can be used in any project even without the
 
 ### Usage
 
-If you just need to use the mixins, import them in your scss file like below or use ``@use`` for better performance:
-```scss
-@import '_mixins.scss';
+Install the package using [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+```
+npm i scss-lub
 ```
 
-If you need to use also the **classes**, feel free to skip ``_mixins.scss`` and directly import the classes in your scss file like below or use ``@use`` for better performance:
+Import/use the following file to load mixins and classes in your scss file:
 ```scss
-@import 'base-classes/classes.scss';
+@import 'main.scss';
 ```
 
 ### Contributing
@@ -24,6 +24,7 @@ If you need to use also the **classes**, feel free to skip ``_mixins.scss`` and 
 - [ ] Add more documentation
 - [ ] Add SASS support
 - [ ] Add more mixins and classes
+- [ ] Split imports
 
 If you want to contribute to this project, you can fork this repository and create a pull request.
 Please keep in mind that this project is still in development and may contain bugs or missing parts.
