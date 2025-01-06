@@ -1,42 +1,79 @@
-@import "../variables";
-@import "../utilities.scss";
+@use "../variables";
+@use "../utilities.scss";
 
 // ***********  BORDERS  *********** //
 //TODO: change default borders color
 
+@mixin borders($width, $type, $color) {
+    border: utilities.add-px-unit($width) $type $color;
+}
+
+@mixin border($value){
+  border: $value;
+}
+
 @mixin border-default {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  @include borders(1px, solid, variables.$dark);
+  @include border-radius;
 }
 
 @mixin border-radius($radius: 10) {
-  border-radius: add-px-unit($radius);
+  border-radius: utilities.add-px-unit($radius);
 }
 
 @mixin border-side-radius($side, $radius: 10) {
-  border-#{$side}-radius: add-px-unit($radius);
+  border-#{$side}-radius: utilities.add-px-unit($radius);
 }
 
-@mixin border-top($top: 1,$type: solid, $color: $dark) {
-  border-top: add-px-unit($top) solid $color;
+@mixin border-top($top: 1,$type: solid, $color: variables.$dark) {
+  border-top: utilities.add-px-unit($top) solid $color;
 }
 
-@mixin border-right($right: 1,$type: solid, $color: $dark) {
-  border-right: add-px-unit($right) solid $color;
+@mixin border-right($right: 1,$type: solid, $color: variables.$dark) {
+  border-right: utilities.add-px-unit($right) solid $color;
 }
 
-@mixin border-bottom($bottom:1, $type: solid, $color: $dark) {
-  border-bottom: add-px-unit($bottom) solid $color;
+@mixin border-bottom($bottom:1, $type: solid, $color: variables.$dark) {
+  border-bottom: utilities.add-px-unit($bottom) solid $color;
 }
 
-@mixin border-left($left: 1,$type: solid, $color: $dark) {
-  border-left: add-px-unit($left) solid $color;
+@mixin border-left($left: 1,$type: solid, $color: variables.$dark) {
+  border-left: utilities.add-px-unit($left) solid $color;
 }
 
 @mixin custom-border($position: all, $size: 1px, $style: solid, $color: black) {
   @if $position == all {
-    border: add-px-unit($size) $style $color;
+    border: utilities.add-px-unit($size) $style $color;
   } @else {
-    border-#{$position}: add-px-unit($size) $style $color;
+    border-#{$position}: utilities.add-px-unit($size) $style $color;
   }
+}
+
+@mixin borders-top-radius($radius: 10){
+  @include border-side-radius(top-left,$radius);
+  @include border-side-radius(top-right,$radius);
+}
+@mixin borders-bottom-radius($radius: 10){
+  @include border-side-radius(bottom-left,$radius);
+  @include border-side-radius(bottom-right,$radius);
+}
+@mixin borders-left-radius($radius: 10){
+  @include border-side-radius(top-left,$radius);
+  @include border-side-radius(bottom-left,$radius);
+}
+@mixin borders-right-radius($radius: 10){
+  @include border-side-radius(top-right,$radius);
+  @include border-side-radius(bottom-right,$radius);
+}
+
+@mixin border-width($width){
+  border-width: $width;
+}
+
+@mixin border-none {
+  border: none;
+}
+
+@mixin border-color($color) {
+  border-color: $color;
 }

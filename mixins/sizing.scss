@@ -40,6 +40,11 @@
   width: fit-content;
 }
 
+@mixin squared($side: 100){
+  width: add-px-unit($side);
+  height: add-px-unit($side);
+}
+
 // ***********  OBJECTT-FIT  *********** //
 
 @mixin object-fit($fit: cover) {

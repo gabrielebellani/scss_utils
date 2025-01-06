@@ -1,81 +1,81 @@
-@import "../../_mixins";
+@use "../../_mixins";
 
 // ***********  DISPLAY FLEX  *********** //
 .d-flex {
-  @include flex;
+  @include mixins.flex;
 }
 
 .flex-column {
-  @include flex-column;
+  @include mixins.flex-column;
 }
 
 .align-items-center {
-  @include align-items-center;
+  @include mixins.align-items-center;
 }
 
 .align-items-start {
-  @include align-items-start;
+  @include mixins.align-items-start;
 }
 
 .justify-content-center {
-  @include justify-content-center;
+  @include mixins.justify-content-center;
 }
 
 .justify-content-between {
-  @include justify-content-between;
+  @include mixins.justify-content-between;
 }
 
 .justify-content-start {
-  @include justify-content-start;
+  @include mixins.justify-content-start;
 }
 
 .justify-content-end {
-  @include justify-content-end;
+  @include mixins.justify-content-end;
 }
 
 .flex-1{
-  @include set-flex(1)
+  @include mixins.set-flex(1)
 }
 .flex-2{
-  @include set-flex(2)
+  @include mixins.set-flex(2)
 }
 .flex-3{
-  @include set-flex(3)
+  @include mixins.set-flex(3)
 }
 .flex-4{
-  @include set-flex(4)
+  @include mixins.set-flex(4)
 }
 .flex-5{
-  @include set-flex(5)
+  @include mixins.set-flex(5)
 }
 .flex-6{
-  @include set-flex(6)
+  @include mixins.set-flex(6)
 }
 .flex-7{
-  @include set-flex(7)
+  @include mixins.set-flex(7)
 }
 .flex-8{
-  @include set-flex(8)
+  @include mixins.set-flex(8)
 }
 .flex-9{
-  @include set-flex(9)
+  @include mixins.set-flex(9)
 }
 
 .flex-10{
-  @include set-flex(10)
+  @include mixins.set-flex(10)
 }
 
 
 // ***********  DISPLAY INLINE/BLOCK  *********** //
 
 .d-inline {
-  @include inline;
+  @include mixins.inline;
 }
 
 .d-block {
-  @include block;
+  @include mixins.block;
 }
 
 .d-inline-block {
-  @include inline-block;
+  @include mixins.inline-block;
 }

@@ -1,10 +1,16 @@
-@import "../_variables.scss";
-@import "../utilities.scss";
+@use "../_variables.scss";
+@use "../utilities.scss";
 
 // ***********  FONTS  *********** //
 
+@mixin font-family($family: '') {
+    @if ($family!='') {
+        font-family: $family;
+    }
+}
+
 @mixin font-size($size) {
-  font-size: add-px-unit($size);
+  font-size: utilities.add-px-unit($size);
 }
 
 @mixin font-weight($weight: 400) {
@@ -15,9 +21,15 @@
   @include font-weight(400);
 }
 
-@mixin decorationPrimaryUnderline {
-  text-decoration: underline;
-  text-decoration-color: $primary;
+@mixin text-decoration-color($color: '') {
+  @if ($color!='') {
+    text-decoration-color: $color;
+  }
+}
+
+@mixin underline-primary {
+  @include text-underline;
+  @include text-decoration-color(variables.$primary);
 }
 
 @mixin font-size-height-width($size: 14, $unit: px) {
@@ -32,37 +44,49 @@
   }
 }
 
+@mixin text-primary {
+  @include color(variables.$primary)
+}
+
+@mixin text-secondary {
+  @include color(variables.$secondary)
+}
+
+@mixin text-lightgrey {
+  @include color(variables.$lightGrey)
+}
+
 @mixin font-success {
-  color: $success;
+  @include color(variables.$success);
 }
 
 @mixin font-info {
-  color: $info;
+  @include color(variables.$info);
 }
 
 @mixin font-warning {
-  color: $warning;
+  @include color(variables.$warning);
 }
 
 @mixin font-failure {
-  color: $danger;
+  @include color(variables.$danger);
 }
 
 
 @mixin font-contrast-success {
-  color: $successContrast;
+  @include color(variables.$successContrast);
 }
 
 @mixin font-contrast-info {
-  color: $infoContrast;
+  @include color(variables.$infoContrast);
 }
 
 @mixin font-contrast-warning {
-  color: $warningContrast;
+  @include color(variables.$warningContrast);
 }
 
 @mixin font-contrast-failure {
-  color: $dangerContrast;
+  @include color(variables.$dangerContrast);
 }
 
 @mixin text-center {
@@ -115,3 +139,6 @@
   text-overflow: ellipsis;
 }
 
+@mixin text-no-decoration {
+  text-decoration: none;
+}

@@ -41,6 +41,10 @@
   padding: 0;
 }
 
+@mixin p($value){
+  padding: add-px-unit($value);
+}
+
 // All directions
 
 @mixin p-xs {

@@ -10,3 +10,16 @@
     @return $value;
   }
 }
+
+@function get-unit($value) {
+
+  @if (type-of($value) != number) {
+    @warn "get-unit() expects a number, got #{type-of($value)} instead.";
+  }
+
+  @if (unit($value)) {
+    @return "unitless";
+  } @else {
+    @return unit($value);
+  }
+}

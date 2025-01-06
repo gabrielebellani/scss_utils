@@ -1,19 +1,24 @@
+@use "../display";
 
 // ***********  FLEX  *********** //
 
 @mixin flex-column {
+  @include display.flex;
   flex-direction: column;
 }
 
 @mixin flex-column-reverse {
+  @include display.flex;
   flex-direction: column-reverse;
 }
 
 @mixin flex-row {
+  @include display.flex;
   flex-direction: row;
 }
 
 @mixin flex-row-reverse {
+  @include display.flex;
   flex-direction: row-reverse;
 }
 

@@ -1,10 +1,11 @@
-@import "../../mixins";
+@use "../../mixins";
 
 
 // ***********  LISTS  *********** //
 
 .list-unstyled {
-  @include list-style(none);
+  @include mixins.list-style(none);
+  @include mixins.padding-left
 }
 
 

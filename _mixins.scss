@@ -1,26 +1,13 @@
-@import "variables";
+@use "variables";
 
-@import "mixins/fonts";
-@import "mixins/backgrounds";
-@import "mixins/sizing";
-@import "mixins/borders";
-@import "mixins/ux";
-@import "mixins/display";
-@import "mixins/spacing";
-@import "mixins/positioning";
-@import "mixins/overflows";
-@import "mixins/lists";
-
-// ***********  OTHER RULES  *********** //
-
-@mixin textPrimaryColor {
-  color: $primary
-}
-
-@mixin textSecondaryColor {
-  color: $secondary
-}
-
-@mixin lighterText {
-  color: #737373;
-}
+@use "mixins/fonts";
+@use "mixins/backgrounds";
+@use "mixins/sizing";
+@use "mixins/borders";
+@use "mixins/ux";
+@use "mixins/display";
+@use "mixins/spacing";
+@use "mixins/positioning";
+@use "mixins/overflows";
+@use "mixins/lists";
+@use "mixins/visibilities";

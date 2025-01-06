@@ -1,9 +1,7 @@
-@import "../variables";
-
 // ***********  DISPLAYS  *********** //
 
-@import "displays/flex";
-@import "displays/grid";
+@use "displays/flex";
+@use "displays/grid";
 
 @mixin block {
   display: block;
@@ -31,4 +29,8 @@
 
 @mixin d-none {
   display: none;
+}
+
+@mixin gap($gap: 8, $unit: px) {
+  gap: $gap+$unit;
 }

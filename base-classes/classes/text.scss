@@ -1,9 +1,18 @@
-@import "../../_mixins";
+@use "mixins/fonts";
+@use "mixins";
 
 .no-wrap {
-  @include text-nowrap
+  @include fonts.text-nowrap
 }
 
 .text-center {
-  @include text-center
+  @include fonts.text-center
+}
+
+.text-primary {
+  @include mixins.text-primary;
+}
+
+.text-secondary {
+  @include mixins.text-secondary;
 }

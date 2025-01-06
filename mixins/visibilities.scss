@@ -1,0 +1,20 @@
+@mixin visibility-visible {
+  visibility: visible;
+}
+
+@mixin visibility-hidden {
+  visibility: hidden;
+}
+
+@mixin visibility-collapse {
+  visibility: collapse;
+}
+
+@mixin visibility-unset {
+  visibility: unset;
+}
+
+@mixin visibility-initial {
+  visibility: initial;
+}
+
