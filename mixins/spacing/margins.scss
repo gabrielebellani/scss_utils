@@ -1,5 +1,5 @@
-@import "../../variables";
-@import "../../utilities.scss";
+@use "../../variables";
+@use "../../utilities.scss";
 
 // ***********  MARGINS  *********** //
 
@@ -8,29 +8,29 @@
 }
 
 @mixin margin-left($margin) {
-  margin-left: add-px-unit($margin);
+  margin-left: utilities.add-px-unit($margin);
 }
 
 @mixin margin-right($margin) {
-  margin-right: add-px-unit($margin);
+  margin-right: utilities.add-px-unit($margin);
 }
 
 @mixin margin-top($margin: 0) {
-  margin-top: add-px-unit($margin);
+  margin-top: utilities.add-px-unit($margin);
 }
 
 @mixin margin-bottom($margin: 0) {
-  margin-bottom: add-px-unit($margin);
+  margin-bottom: utilities.add-px-unit($margin);
 }
 
 @mixin margin-vertical($margin) {
-  margin-top: add-px-unit($margin);
-  margin-bottom: add-px-unit($margin);
+  margin-top: utilities.add-px-unit($margin);
+  margin-bottom: utilities.add-px-unit($margin);
 }
 
 @mixin margin-horizontal($margin) {
-  margin-left: add-px-unit($margin);
-  margin-right: add-px-unit($margin);
+  margin-left: utilities.add-px-unit($margin);
+  margin-right: utilities.add-px-unit($margin);
 }
 
 @mixin m-unset {
@@ -58,239 +58,239 @@
 // All directions
 
 @mixin m-xs {
-  @include margin($sp-xs);
+  @include margin(variables.$sp-xs);
 }
 
 @mixin m-s {
-  @include margin($sp-s);
+  @include margin(variables.$sp-s);
 }
 
 @mixin m-m {
-  @include margin($sp-m);
+  @include margin(variables.$sp-m);
 }
 
 @mixin m-l {
-  @include margin($sp-l);
+  @include margin(variables.$sp-l);
 }
 
 @mixin m-xl {
-  @include margin($sp-xl);
+  @include margin(variables.$sp-xl);
 }
 
 @mixin m-x1l {
-  @include margin($sp-x1l);
+  @include margin(variables.$sp-x1l);
 }
 
 @mixin m-x2l {
-  @include margin($sp-x2l);
+  @include margin(variables.$sp-x2l);
 }
 
 @mixin m-x3l {
-  @include margin($sp-x3l);
+  @include margin(variables.$sp-x3l);
 }
 
 // Margin top
 
 @mixin m-top-xs {
-  @include margin-top($sp-xs);
+  @include margin-top(variables.$sp-xs);
 }
 
 @mixin m-top-s {
-  @include margin-top($sp-s);
+  @include margin-top(variables.$sp-s);
 }
 
 @mixin m-top-m {
-  @include margin-top($sp-m);
+  @include margin-top(variables.$sp-m);
 }
 
 @mixin m-top-l {
-  @include margin-top($sp-l);
+  @include margin-top(variables.$sp-l);
 }
 
 @mixin m-top-xl {
-  @include margin-top($sp-xl);
+  @include margin-top(variables.$sp-xl);
 }
 
 @mixin m-top-x1l {
-  @include margin-top($sp-x1l);
+  @include margin-top(variables.$sp-x1l);
 }
 
 @mixin m-top-x2l {
-  @include margin-top($sp-x2l);
+  @include margin-top(variables.$sp-x2l);
 }
 
 @mixin m-top-x3l {
-  @include margin-top($sp-x3l);
+  @include margin-top(variables.$sp-x3l);
 }
 
 //Margin bottom
 
 @mixin m-bottom-xs {
-  @include margin-bottom($sp-xs);
+  @include margin-bottom(variables.$sp-xs);
 }
 
 @mixin m-bottom-s {
-  @include margin-bottom($sp-s);
+  @include margin-bottom(variables.$sp-s);
 }
 
 @mixin m-bottom-m {
-  @include margin-bottom($sp-m);
+  @include margin-bottom(variables.$sp-m);
 }
 
 @mixin m-bottom-l {
-  @include margin-bottom($sp-l);
+  @include margin-bottom(variables.$sp-l);
 }
 
 @mixin m-bottom-xl {
-  @include margin-bottom($sp-xl);
+  @include margin-bottom(variables.$sp-xl);
 }
 
 @mixin m-bottom-x1l {
-  @include margin-bottom($sp-x1l);
+  @include margin-bottom(variables.$sp-x1l);
 }
 
 @mixin m-bottom-x2l {
-  @include margin-bottom($sp-x2l);
+  @include margin-bottom(variables.$sp-x2l);
 }
 
 @mixin m-bottom-x3l {
-  @include margin-bottom($sp-x3l);
+  @include margin-bottom(variables.$sp-x3l);
 }
 
 //Margin right
 
 @mixin m-right-xs {
-  @include margin-right($sp-xs);
+  @include margin-right(variables.$sp-xs);
 }
 
 @mixin m-right-s {
-  @include margin-right($sp-s);
+  @include margin-right(variables.$sp-s);
 }
 
 @mixin m-right-m {
-  @include margin-right($sp-m);
+  @include margin-right(variables.$sp-m);
 }
 
 @mixin m-right-l {
-  @include margin-right($sp-l);
+  @include margin-right(variables.$sp-l);
 }
 
 @mixin m-right-xl {
-  @include margin-right($sp-xl);
+  @include margin-right(variables.$sp-xl);
 }
 
 @mixin m-right-x1l {
-  @include margin-right($sp-x1l);
+  @include margin-right(variables.$sp-x1l);
 }
 
 @mixin m-right-x2l {
-  @include margin-right($sp-x2l);
+  @include margin-right(variables.$sp-x2l);
 }
 
 @mixin m-right-x3l {
-  @include margin-right($sp-x3l);
+  @include margin-right(variables.$sp-x3l);
 }
 
 //Margin left
 
 @mixin m-left-xs {
-  @include margin-left($sp-xs);
+  @include margin-left(variables.$sp-xs);
 }
 
 @mixin m-left-s {
-  @include margin-left($sp-s);
+  @include margin-left(variables.$sp-s);
 }
 
 @mixin m-left-m {
-  @include margin-left($sp-m);
+  @include margin-left(variables.$sp-m);
 }
 
 @mixin m-left-l {
-  @include margin-left($sp-l);
+  @include margin-left(variables.$sp-l);
 }
 
 @mixin m-left-xl {
-  @include margin-left($sp-xl);
+  @include margin-left(variables.$sp-xl);
 }
 
 @mixin m-left-x1l {
-  @include margin-left($sp-x1l);
+  @include margin-left(variables.$sp-x1l);
 }
 
 @mixin m-left-x2l {
-  @include margin-left($sp-x2l);
+  @include margin-left(variables.$sp-x2l);
 }
 
 @mixin m-left-x3l {
-  @include margin-left($sp-x3l);
+  @include margin-left(variables.$sp-x3l);
 }
 
 //Margin horizontal
 
 @mixin m-horizontal-xs {
-  @include margin-horizontal($sp-xs);
+  @include margin-horizontal(variables.$sp-xs);
 }
 
 @mixin m-horizontal-s {
-  @include margin-horizontal($sp-s);
+  @include margin-horizontal(variables.$sp-s);
 }
 
 @mixin m-horizontal-m {
-  @include margin-horizontal($sp-m);
+  @include margin-horizontal(variables.$sp-m);
 }
 
 @mixin m-horizontal-l {
-  @include margin-horizontal($sp-l);
+  @include margin-horizontal(variables.$sp-l);
 }
 
 @mixin m-horizontal-xl {
-  @include margin-horizontal($sp-xl);
+  @include margin-horizontal(variables.$sp-xl);
 }
 
 @mixin m-horizontal-x1l {
-  @include margin-horizontal($sp-x1l);
+  @include margin-horizontal(variables.$sp-x1l);
 }
 
 @mixin m-horizontal-x2l {
-  @include margin-horizontal($sp-x2l);
+  @include margin-horizontal(variables.$sp-x2l);
 }
 
 @mixin m-horizontal-x3l {
-  @include margin-horizontal($sp-x3l);
+  @include margin-horizontal(variables.$sp-x3l);
 }
 
 //Margin vertical
 
 @mixin m-vertical-xs {
-  @include margin-vertical($sp-xs);
+  @include margin-vertical(variables.$sp-xs);
 }
 
 @mixin m-vertical-s {
-  @include margin-vertical($sp-s);
+  @include margin-vertical(variables.$sp-s);
 }
 
 @mixin m-vertical-m {
-  @include margin-vertical($sp-m);
+  @include margin-vertical(variables.$sp-m);
 }
 
 @mixin m-vertical-l {
-  @include margin-vertical($sp-l);
+  @include margin-vertical(variables.$sp-l);
 }
 
 @mixin m-vertical-xl {
-  @include margin-vertical($sp-xl);
+  @include margin-vertical(variables.$sp-xl);
 }
 
 @mixin m-vertical-x1l {
-  @include margin-vertical($sp-x1l);
+  @include margin-vertical(variables.$sp-x1l);
 }
 
 @mixin m-vertical-x2l {
-  @include margin-vertical($sp-x2l);
+  @include margin-vertical(variables.$sp-x2l);
 }
 
 @mixin m-vertical-x3l {
-  @include margin-vertical($sp-x3l);
+  @include margin-vertical(variables.$sp-x3l);
 }
 
 @mixin m-vertical-0 {

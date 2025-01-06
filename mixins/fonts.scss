@@ -68,7 +68,7 @@
   @include color(variables.$warning);
 }
 
-@mixin font-failure {
+@mixin font-danger {
   @include color(variables.$danger);
 }
 
@@ -85,7 +85,7 @@
   @include color(variables.$warningContrast);
 }
 
-@mixin font-contrast-failure {
+@mixin font-contrast-danger {
   @include color(variables.$dangerContrast);
 }
 

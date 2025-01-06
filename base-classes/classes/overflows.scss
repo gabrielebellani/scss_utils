@@ -1,56 +1,56 @@
-@import "../../mixins.scss";
+@use "../../mixins/overflows";
 
 // ***********  OVERFLOWS  *********** //
 
 .of-auto {
-  @include overflow-auto();
+  @include overflows.overflow-auto();
 }
 
 .of-hidden {
-  @include overflow-hidden();
+  @include overflows.overflow-hidden();
 }
 
 .of-visible {
-  @include overflow-visible();
+  @include overflows.overflow-visible();
 }
 
 .of-scroll {
-  @include overflow-scroll();
+  @include overflows.overflow-scroll();
 }
 
 // ***********  OVERFLOWS X *********** //
 
 .of-x-scroll {
-  @include overflow-x-scroll();
+  @include overflows.overflow-x-scroll();
 }
 
 .of-x-auto {
-  @include overflow-x-auto();
+  @include overflows.overflow-x-auto();
 }
 
 .of-x-hidden {
-  @include overflow-x-hidden();
+  @include overflows.overflow-x-hidden();
 }
 
 .of-x-visible {
-  @include overflow-x-visible();
+  @include overflows.overflow-x-visible();
 }
 
 // ***********  OVERFLOWS Y *********** //
 
 .of-y-scroll {
-  @include overflow-y-scroll();
+  @include overflows.overflow-y-scroll();
 }
 
 .of-y-auto {
-  @include overflow-y-auto();
+  @include overflows.overflow-y-auto();
 }
 
 .of-y-hidden {
-  @include overflow-y-hidden();
+  @include overflows.overflow-y-hidden();
 }
 
 .of-y-visible {
-  @include overflow-y-visible();
+  @include overflows.overflow-y-visible();
 }
 

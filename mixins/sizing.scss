@@ -1,35 +1,34 @@
-@import "../variables";
-@import "../utilities";
+@use "../utilities";
 
 // ***********  SIZING  *********** //
 
 @mixin wh($width: 100, $height: 100) {
-  width: add-px-unit($width);
-  height: add-px-unit($height);
+  width: utilities.add-px-unit($width);
+  height: utilities.add-px-unit($height);
 }
 
 @mixin height($height: 100) {
-  height: add-px-unit($height);
+  height: utilities.add-px-unit($height);
 }
 
 @mixin width($width: 100) {
-  width: add-px-unit($width);
+  width: utilities.add-px-unit($width);
 }
 
 @mixin min-height($height: 100) {
-  min-height: add-px-unit($height);
+  min-height: utilities.add-px-unit($height);
 }
 
 @mixin max-height($height: 100) {
-  max-height: add-px-unit($height);
+  max-height: utilities.add-px-unit($height);
 }
 
 @mixin min-width($width: 100) {
-  min-width: add-px-unit($width);
+  min-width: utilities.add-px-unit($width);
 }
 
 @mixin max-width($width: 100) {
-  max-width: add-px-unit($width);
+  max-width: utilities.add-px-unit($width);
 }
 
 @mixin height-fit-content {
@@ -41,8 +40,8 @@
 }
 
 @mixin squared($side: 100){
-  width: add-px-unit($side);
-  height: add-px-unit($side);
+  width: utilities.add-px-unit($side);
+  height: utilities.add-px-unit($side);
 }
 
 // ***********  OBJECTT-FIT  *********** //

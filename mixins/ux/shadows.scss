@@ -1,6 +1,4 @@
-@import "../../variables";
-@import "../../utilities";
-
+@use "../../utilities";
 
 // ***********  SHADOWS  *********** //
 
@@ -17,5 +15,5 @@
 // *********** BACKDROP FILTERS ********** //
 
 @mixin backdrop-filter-blur($filter){
-  backdrop-filter: blur(add-px-unit($filter));
+  backdrop-filter: blur(utilities.add-px-unit($filter));
 }

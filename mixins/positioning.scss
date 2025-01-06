@@ -1,4 +1,4 @@
-@import "../utilities";
+@use "../utilities";
 
 @mixin absolute {
   position: absolute;
@@ -21,22 +21,22 @@
 }
 
 @mixin top($top: 0) {
-  top: add-px-unit($top);
+  top: utilities.add-px-unit($top);
 }
 
 @mixin bottom($bottom: 0) {
-  bottom: add-px-unit($bottom);
+  bottom: utilities.add-px-unit($bottom);
 }
 
 @mixin left($left: 0) {
-  left: add-px-unit($left);
+  left: utilities.add-px-unit($left);
 }
 
 @mixin right($right: 0) {
-  right: add-px-unit($right);
+  right: utilities.add-px-unit($right);
 }
 
-@mixin zIndex($zIndex) {
+@mixin z-index($zIndex) {
   z-index: $zIndex;
 }
 

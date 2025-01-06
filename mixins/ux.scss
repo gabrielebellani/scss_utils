@@ -1,8 +1,6 @@
-@import "../variables";
-
 // ***********  UX  *********** //
 
-@import "ux/texts";
-@import "ux/animations";
-@import "ux/cursors";
-@import "ux/shadows";
+@use "ux/texts";
+@use "ux/animations";
+@use "ux/cursors";
+@use "ux/shadows";

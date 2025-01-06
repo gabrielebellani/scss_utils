@@ -1,5 +1,4 @@
 @use "mixins/fonts";
-@use "mixins";
 
 .no-wrap {
   @include fonts.text-nowrap
@@ -10,9 +9,9 @@
 }
 
 .text-primary {
-  @include mixins.text-primary;
+  @include fonts.text-primary;
 }
 
 .text-secondary {
-  @include mixins.text-secondary;
+  @include fonts.text-secondary;
 }

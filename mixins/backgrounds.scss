@@ -1,29 +1,29 @@
-@import "../variables";
+@use "../variables";
 
 // ***********  BACKGROUNDS  *********** //
 
 @mixin bg-primary {
-  background-color: $primary;
+  background-color: variables.$primary;
 }
 
 @mixin bg-secondary {
-  background-color: $secondary;
+  background-color: variables.$secondary;
 }
 
 @mixin bg-info {
-  background-color: $info;
+  background-color: variables.$info;
 }
 
 @mixin bg-success {
-  background-color: $success;
+  background-color: variables.$success;
 }
 
 @mixin bg-warning {
-  background-color: $warning;
+  background-color: variables.$warning;
 }
 
-@mixin bg-failure {
-  background-color: $danger;
+@mixin bg-danger {
+  background-color: variables.$danger;
 }
 
 @mixin background-color($color: '') {

@@ -1,11 +1,12 @@
-@use "../../mixins";
+@use "../../mixins/spacing/paddings";
+@use "../../mixins/lists";
 
 
 // ***********  LISTS  *********** //
 
 .list-unstyled {
-  @include mixins.list-style(none);
-  @include mixins.padding-left
+  @include lists.list-style(none);
+  @include paddings.padding-left
 }
 
 

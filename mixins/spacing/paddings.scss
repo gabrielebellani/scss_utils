@@ -1,5 +1,5 @@
-@import "../../variables";
-@import "../../utilities";
+@use "../../variables";
+@use "../../utilities";
 
 // ***********  PADDINGS  *********** //
 
@@ -8,7 +8,7 @@
 }
 
 @mixin padding-left($left: 0) {
-  padding-left: add-px-unit($left);
+  padding-left: utilities.add-px-unit($left);
 }
 
 @mixin padding-right($right: 0, $unit: px) {
@@ -16,21 +16,21 @@
 }
 
 @mixin padding-top($top: 0) {
-  padding-top: add-px-unit($top);
+  padding-top: utilities.add-px-unit($top);
 }
 
 @mixin padding-bottom($bottom: 0) {
-  padding-bottom: add-px-unit($bottom);
+  padding-bottom: utilities.add-px-unit($bottom);
 }
 
 @mixin padding-vertical($padding) {
-  padding-top: add-px-unit($padding);
-  padding-bottom: add-px-unit($padding);
+  padding-top: utilities.add-px-unit($padding);
+  padding-bottom: utilities.add-px-unit($padding);
 }
 
 @mixin padding-horizontal($horizontal) {
-  padding-left: add-px-unit($horizontal);
-  padding-right: add-px-unit($horizontal);
+  padding-left: utilities.add-px-unit($horizontal);
+  padding-right: utilities.add-px-unit($horizontal);
 }
 
 @mixin p-unset {
@@ -42,243 +42,243 @@
 }
 
 @mixin p($value){
-  padding: add-px-unit($value);
+  padding: utilities.add-px-unit($value);
 }
 
 // All directions
 
 @mixin p-xs {
-  @include padding(px, $sp-xs, $sp-xs, $sp-xs, $sp-xs);
+  @include padding(px, variables.$sp-xs, variables.$sp-xs, variables.$sp-xs, variables.$sp-xs);
 }
 
 @mixin p-s {
-  @include padding(px, $sp-s, $sp-s, $sp-s, $sp-s);
+  @include padding(px, variables.$sp-s, variables.$sp-s, variables.$sp-s, variables.$sp-s);
 }
 
 @mixin p-m {
-  @include padding(px, $sp-m, $sp-m, $sp-m, $sp-m);
+  @include padding(px, variables.$sp-m, variables.$sp-m, variables.$sp-m, variables.$sp-m);
 }
 
 @mixin p-l {
-  @include padding(px, $sp-l, $sp-l, $sp-l, $sp-l);
+  @include padding(px, variables.$sp-l, variables.$sp-l, variables.$sp-l, variables.$sp-l);
 }
 
 @mixin p-xl {
-  @include padding($sp-xl);
+  @include padding(variables.$sp-xl);
 }
 
 @mixin p-x1l {
-  @include padding($sp-x1l);
+  @include padding(variables.$sp-x1l);
 }
 
 @mixin p-x2l {
-  @include padding($sp-x2l);
+  @include padding(variables.$sp-x2l);
 }
 
 @mixin p-x3l {
-  @include padding($sp-x3l);
+  @include padding(variables.$sp-x3l);
 }
 
 // Padding top
 
 @mixin p-top-xs {
-  @include padding-top($sp-xs);
+  @include padding-top(variables.$sp-xs);
 }
 
 @mixin p-top-s {
-  @include padding-top($sp-s);
+  @include padding-top(variables.$sp-s);
 }
 
 @mixin p-top-m {
-  @include padding-top($sp-m);
+  @include padding-top(variables.$sp-m);
 }
 
 @mixin p-top-l {
-  @include padding-top($sp-l);
+  @include padding-top(variables.$sp-l);
 }
 
 @mixin p-top-xl {
-  @include padding-top($sp-xl);
+  @include padding-top(variables.$sp-xl);
 }
 
 @mixin p-top-x1l {
-  @include padding-top($sp-x1l);
+  @include padding-top(variables.$sp-x1l);
 }
 
 @mixin p-top-x2l {
-  @include padding-top($sp-x2l);
+  @include padding-top(variables.$sp-x2l);
 }
 
 @mixin p-top-x3l {
-  @include padding-top($sp-x3l);
+  @include padding-top(variables.$sp-x3l);
 }
 
 //Padding bottom
 
 @mixin p-bottom-xs {
-  @include padding-bottom($sp-xs);
+  @include padding-bottom(variables.$sp-xs);
 }
 
 @mixin p-bottom-s {
-  @include padding-bottom($sp-s);
+  @include padding-bottom(variables.$sp-s);
 }
 
 @mixin p-bottom-m {
-  @include padding-bottom($sp-m);
+  @include padding-bottom(variables.$sp-m);
 }
 
 @mixin p-bottom-l {
-  @include padding-bottom($sp-l);
+  @include padding-bottom(variables.$sp-l);
 }
 
 @mixin p-bottom-xl {
-  @include padding-bottom($sp-xl);
+  @include padding-bottom(variables.$sp-xl);
 }
 
 @mixin p-bottom-x1l {
-  @include padding-bottom($sp-x1l);
+  @include padding-bottom(variables.$sp-x1l);
 }
 
 @mixin p-bottom-x2l {
-  @include padding-bottom($sp-x2l);
+  @include padding-bottom(variables.$sp-x2l);
 }
 
 @mixin p-bottom-x3l {
-  @include padding-bottom($sp-x3l);
+  @include padding-bottom(variables.$sp-x3l);
 }
 
 //Padding right
 
 @mixin p-right-xs {
-  @include padding-right($sp-xs);
+  @include padding-right(variables.$sp-xs);
 }
 
 @mixin p-right-s {
-  @include padding-right($sp-s);
+  @include padding-right(variables.$sp-s);
 }
 
 @mixin p-right-m {
-  @include padding-right($sp-m);
+  @include padding-right(variables.$sp-m);
 }
 
 @mixin p-right-l {
-  @include padding-right($sp-l);
+  @include padding-right(variables.$sp-l);
 }
 
 @mixin p-right-xl {
-  @include padding-right($sp-xl);
+  @include padding-right(variables.$sp-xl);
 }
 
 @mixin p-right-x1l {
-  @include padding-right($sp-x1l);
+  @include padding-right(variables.$sp-x1l);
 }
 
 @mixin p-right-x2l {
-  @include padding-right($sp-x2l);
+  @include padding-right(variables.$sp-x2l);
 }
 
 @mixin p-right-x3l {
-  @include padding-right($sp-x3l);
+  @include padding-right(variables.$sp-x3l);
 }
 
 //Padding left
 
 @mixin p-left-xs {
-  @include padding-left($sp-xs);
+  @include padding-left(variables.$sp-xs);
 }
 
 @mixin p-left-s {
-  @include padding-left($sp-s);
+  @include padding-left(variables.$sp-s);
 }
 
 @mixin p-left-m {
-  @include padding-left($sp-m);
+  @include padding-left(variables.$sp-m);
 }
 
 @mixin p-left-l {
-  @include padding-left($sp-l);
+  @include padding-left(variables.$sp-l);
 }
 
 @mixin p-left-xl {
-  @include padding-left($sp-xl);
+  @include padding-left(variables.$sp-xl);
 }
 
 @mixin p-left-x1l {
-  @include padding-left($sp-x1l);
+  @include padding-left(variables.$sp-x1l);
 }
 
 @mixin p-left-x2l {
-  @include padding-left($sp-x2l);
+  @include padding-left(variables.$sp-x2l);
 }
 
 @mixin p-left-x3l {
-  @include padding-left($sp-x3l);
+  @include padding-left(variables.$sp-x3l);
 }
 
 //Padding horizontal
 
 @mixin p-horizontal-xs {
-  @include padding-horizontal($sp-xs);
+  @include padding-horizontal(variables.$sp-xs);
 }
 
 @mixin p-horizontal-s {
-  @include padding-horizontal($sp-s);
+  @include padding-horizontal(variables.$sp-s);
 }
 
 @mixin p-horizontal-m {
-  @include padding-horizontal($sp-m);
+  @include padding-horizontal(variables.$sp-m);
 }
 
 @mixin p-horizontal-l {
-  @include padding-horizontal($sp-l);
+  @include padding-horizontal(variables.$sp-l);
 }
 
 @mixin p-horizontal-xl {
-  @include padding-horizontal($sp-xl);
+  @include padding-horizontal(variables.$sp-xl);
 }
 
 @mixin p-horizontal-x1l {
-  @include padding-horizontal($sp-x1l);
+  @include padding-horizontal(variables.$sp-x1l);
 }
 
 @mixin p-horizontal-x2l {
-  @include padding-horizontal($sp-x2l);
+  @include padding-horizontal(variables.$sp-x2l);
 }
 
 @mixin p-horizontal-x3l {
-  @include padding-horizontal($sp-x3l);
+  @include padding-horizontal(variables.$sp-x3l);
 }
 
 //Padding vertical
 
 @mixin p-vertical-xs {
-  @include padding-vertical($sp-xs);
+  @include padding-vertical(variables.$sp-xs);
 }
 
 @mixin p-vertical-s {
-  @include padding-vertical($sp-s);
+  @include padding-vertical(variables.$sp-s);
 }
 
 @mixin p-vertical-m {
-  @include padding-vertical($sp-m);
+  @include padding-vertical(variables.$sp-m);
 }
 
 @mixin p-vertical-l {
-  @include padding-vertical($sp-l);
+  @include padding-vertical(variables.$sp-l);
 }
 
 @mixin p-vertical-xl {
-  @include padding-vertical($sp-xl);
+  @include padding-vertical(variables.$sp-xl);
 }
 
 @mixin p-vertical-x1l {
-  @include padding-vertical($sp-x1l);
+  @include padding-vertical(variables.$sp-x1l);
 }
 
 @mixin p-vertical-x2l {
-  @include padding-vertical($sp-x2l);
+  @include padding-vertical(variables.$sp-x2l);
 }
 
 @mixin p-vertical-x3l {
-  @include padding-vertical($sp-x3l);
+  @include padding-vertical(variables.$sp-x3l);
 }

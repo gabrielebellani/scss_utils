@@ -1,6 +1,4 @@
-@import "../variables";
-
 // ***********  SPACING  *********** //
 
-@import "spacing/paddings";
-@import "spacing/margins";
+@use "spacing/paddings";
+@use "spacing/margins";
