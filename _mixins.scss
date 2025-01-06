@@ -1,13 +1,13 @@
 @use "variables";
 
-@use "mixins/fonts";
-@use "mixins/backgrounds";
-@use "mixins/sizing";
-@use "mixins/borders";
-@use "mixins/ux";
-@use "mixins/display";
-@use "mixins/spacing";
-@use "mixins/positioning";
-@use "mixins/overflows";
-@use "mixins/lists";
-@use "mixins/visibilities";
+@use "mixins_/fonts";
+@use "mixins_/backgrounds";
+@use "mixins_/sizing";
+@use "mixins_/borders";
+@use "mixins_/ux";
+@use "mixins_/display";
+@use "mixins_/spacing";
+@use "mixins_/positioning";
+@use "mixins_/overflows";
+@use "mixins_/lists";
+@use "mixins_/visibilities";

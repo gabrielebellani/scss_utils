@@ -1,4 +1,4 @@
-@use "mixins/fonts";
+@use "../../mixins_/fonts";
 
 .no-wrap {
   @include fonts.text-nowrap
