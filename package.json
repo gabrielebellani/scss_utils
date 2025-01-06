@@ -1,6 +1,6 @@
 {
   "name": "scss-lub",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "This is a collection of useful mixins and classes for scss projects. It's _**framework independent**_ and can be used in any project even without the need of JavaScript.",
   "main": "main.scss",
   "scripts": {
