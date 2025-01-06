@@ -1,6 +1,6 @@
 // ***********  UX  *********** //
 
-@use "ux/texts";
-@use "ux/animations";
-@use "ux/cursors";
-@use "ux/shadows";
+@forward "ux/texts";
+@forward "ux/animations";
+@forward "ux/cursors";
+@forward "ux/shadows";

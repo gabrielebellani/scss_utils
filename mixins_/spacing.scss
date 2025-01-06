@@ -1,4 +1,4 @@
 // ***********  SPACING  *********** //
 
-@use "spacing/paddings";
-@use "spacing/margins";
+@forward "spacing/paddings";
+@forward "spacing/margins";
