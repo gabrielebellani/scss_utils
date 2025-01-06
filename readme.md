@@ -17,6 +17,16 @@ Import/use the following file to load mixins and classes in your scss file:
 @import 'main.scss';
 ```
 
+If you want to use mixins directly in your scss files you can import the following file:
+```scss
+@use 'scss-lub/mixins.scss';
+```
+
+and then refer to the mixins like this:
+```scss
+@include mixins.padding(10px);
+```
+
 ### Contributing
 
 #### Roadmap
