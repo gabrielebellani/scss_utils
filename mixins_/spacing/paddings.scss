@@ -48,35 +48,35 @@
 // All directions
 
 @mixin p-xs {
-  @include padding(px, variables.$sp-xs, variables.$sp-xs, variables.$sp-xs, variables.$sp-xs);
+  @include p(variables.$sp-xs);
 }
 
 @mixin p-s {
-  @include padding(px, variables.$sp-s, variables.$sp-s, variables.$sp-s, variables.$sp-s);
+  @include p(variables.$sp-s);
 }
 
 @mixin p-m {
-  @include padding(px, variables.$sp-m, variables.$sp-m, variables.$sp-m, variables.$sp-m);
+  @include p(variables.$sp-m);
 }
 
 @mixin p-l {
-  @include padding(px, variables.$sp-l, variables.$sp-l, variables.$sp-l, variables.$sp-l);
+  @include p(variables.$sp-l);
 }
 
 @mixin p-xl {
-  @include padding(variables.$sp-xl);
+  @include p(variables.$sp-xl);
 }
 
 @mixin p-x1l {
-  @include padding(variables.$sp-x1l);
+  @include p(variables.$sp-x1l);
 }
 
 @mixin p-x2l {
-  @include padding(variables.$sp-x2l);
+  @include p(variables.$sp-x2l);
 }
 
 @mixin p-x3l {
-  @include padding(variables.$sp-x3l);
+  @include p(variables.$sp-x3l);
 }
 
 // Padding top

@@ -1,10 +1,14 @@
+@use 'sass:math';
+@use 'sass:meta';
+@use 'sass:color' as sassColor;
+
 @function add-px-unit($value) {
 
-  @if (type-of($value) != number) {
+  @if (meta.type-of($value) != number) {
     @return $value;
   }
 
-  @if (unitless($value)) {
+  @if (math.is-unitless($value)) {
     @return #{$value}px;
   } @else {
     @return $value;
@@ -13,13 +17,26 @@
 
 @function get-unit($value) {
 
-  @if (type-of($value) != number) {
-    @warn "get-unit() expects a number, got #{type-of($value)} instead.";
+  @if (meta.type-of($value) != number) {
+    @warn "get-unit() expects a number, got #{meta.type-of($value)} instead.";
   }
 
-  @if (unit($value)) {
+  @if (math.unit($value)) {
     @return "unitless";
   } @else {
-    @return unit($value);
+    @return math.unit($value);
   }
+}
+
+@function get-rgba($color, $alpha) {
+
+  @if (meta.type-of($color) != color) {
+    @warn "get-rgba() expects a color, got #{meta.type-of($color)} instead.";
+  }
+
+  @if (meta.type-of($alpha) != number) {
+    @warn "get-rgba() expects a number, got #{meta.type-of($alpha)} instead.";
+  }
+
+  @return rgba(sassColor.channel($color, "red", $space: rgb), sassColor.channel($color, "green", $space: rgb), sassColor.channel($color, "blue", $space: rgb), $alpha);
 }

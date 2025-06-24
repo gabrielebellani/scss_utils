@@ -1,0 +1,5 @@
+@use "../../mixins_/ux";
+
+.cursor-pointer{
+  @include ux.cursor-pointer
+}

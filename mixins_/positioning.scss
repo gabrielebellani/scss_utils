@@ -40,3 +40,23 @@
   z-index: $zIndex;
 }
 
+@mixin sticky-top{
+  @include sticky;
+  @include top;
+}
+
+@mixin sticky-bottom{
+  @include sticky;
+  @include bottom;
+}
+
+
+@mixin fixed-top{
+  @include fixed;
+  @include top;
+}
+
+@mixin fixed-bottom{
+  @include fixed;
+  @include bottom;
+}

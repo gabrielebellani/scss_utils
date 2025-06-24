@@ -2,3 +2,15 @@
 @mixin align-self($align) {
   align-self: $align;
 }
+
+@mixin template-columns($columns) {
+  grid-template-columns: $columns;
+}
+
+@mixin template-rows($rows){
+  grid-template-rows: $rows;
+}
+
+@mixin template-area($areas){
+  grid-template-areas: $areas;
+}

@@ -1,44 +1,44 @@
-$primary: #13693F;
+$primary: #13693F!default;
 
-$secondary: #20B159;
+$secondary: #20B159!default;
 
-$light: #F2F4F3;
-$dark: #2E2D2A;
+$light: #F2F4F3!default;
+$dark: #2E2D2A!default;
 
-$info: #41464B;
-$success: #D1E6DD;
-$warning: #FFF3CD;
-$danger: #F8D7D9;
+$info: #41464B!default;
+$success: #D1E6DD!default;
+$warning: #FFF3CD!default;
+$danger: #F8D7D9!default;
 
-$infoContrast: #E2E3E5;
-$successContrast: #0F5132;
-$warningContrast: #664D03;
-$dangerContrast: #842029;
+$infoContrast: #E2E3E5!default;
+$successContrast: #0F5132!default;
+$warningContrast: #664D03!default;
+$dangerContrast: #842029!default;
 
-$white: #FFFFFF;
-$black: #000000;
-$grey: #797B84;
-$lightGrey: #737373;
+$white: #FFFFFF!default;
+$black: #000000!default;
+$grey: #797B84!default;
+$lightGrey: #737373!default;
 
 //UNITS ARE INTENDED IN PX
 //Spacing
-$sp-xs: 6;
-$sp-s: 10;
-$sp-m: 15;
-$sp-l: 20;
-$sp-xl: 30;
-$sp-x1l: 36;
-$sp-x2l: 40;
-$sp-x3l: 50;
+$sp-xs: 6!default;
+$sp-s: 10!default;
+$sp-m: 15!default;
+$sp-l: 20!default;
+$sp-xl: 30!default;
+$sp-x1l: 36!default;
+$sp-x2l: 40!default;
+$sp-x3l: 50!default;
 
 //FONT SIZES
-$fs-xxs: 10;
-$fs-xs: 12;
-$fs-s: 14;
-$fs-m: 16;
-$fs-l: 18;
-$fs-xl: 20;
-$fs-x1l: 24;
-$fs-x1-5l: 26;
-$fs-x2l: 30;
-$fs-x3l: 40;
+$fs-xxs: 10!default;
+$fs-xs: 12!default;
+$fs-s: 14!default;
+$fs-m: 16!default;
+$fs-l: 18!default;
+$fs-xl: 20!default;
+$fs-x1l: 24!default;
+$fs-x1-5l: 26!default;
+$fs-x2l: 30!default;
+$fs-x3l: 40!default;

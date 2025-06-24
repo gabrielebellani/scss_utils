@@ -10,20 +10,36 @@
   @include flex.flex-column;
 }
 
+.align-items-baseline {
+  @include flex.align-items-baseline;
+}
+
 .align-items-center {
   @include flex.align-items-center;
+}
+
+.align-items-end {
+  @include flex.align-items-end;
 }
 
 .align-items-start {
   @include flex.align-items-start;
 }
 
-.justify-content-center {
-  @include flex.justify-content-center;
+.justify-content-around {
+  @include flex.justify-content-around;
 }
 
 .justify-content-between {
   @include flex.justify-content-between;
+}
+
+.justify-content-center {
+  @include flex.justify-content-center;
+}
+
+.justify-content-evenly {
+  @include flex.justify-content-evenly;
 }
 
 .justify-content-start {

@@ -49,3 +49,9 @@
 @mixin object-fit($fit: cover) {
   object-fit: $fit;
 }
+
+// ***********  ASPECT-RATIO  *********** //
+
+@mixin aspect-ratio($ratio: 1) {
+  aspect-ratio: $ratio;
+}

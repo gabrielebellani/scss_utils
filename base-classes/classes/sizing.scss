@@ -45,6 +45,10 @@
   @include sizing.width(5%);
 }
 
+.w-fit {
+  @include sizing.width-fit-content;
+}
+
 // Min width
 .min-w-100 {
   @include sizing.min-width(100%);
@@ -178,4 +182,8 @@
 
 .h-5 {
   @include sizing.height(5%);
+}
+
+.h-fit {
+  @include sizing.width-fit-content;
 }

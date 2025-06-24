@@ -8,3 +8,15 @@
 @mixin cursor-not-allowed {
   cursor: not-allowed;
 }
+
+@mixin cursor-default {
+  cursor: default;
+}
+
+@mixin cursor-unset {
+  cursor: unset;
+}
+
+@mixin cursor-none {
+  cursor: none;
+}

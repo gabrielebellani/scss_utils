@@ -6,6 +6,10 @@
   box-shadow: 0 10px 20px rgba(200, 208, 216, 0.3);
 }
 
+@mixin box-shadow($shadow) {
+  box-shadow: $shadow;
+}
+
 // ***********  OPACITY  *********** //
 
 @mixin opacity($opacity: 1){
