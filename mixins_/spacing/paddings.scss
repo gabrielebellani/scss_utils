@@ -11,8 +11,8 @@
   padding-left: utilities.add-px-unit($left);
 }
 
-@mixin padding-right($right: 0, $unit: px) {
-  padding-right: #{$right}#{$unit};
+@mixin padding-right($right: 0) {
+  padding-right: utilities.add-px-unit($right);
 }
 
 @mixin padding-top($top: 0) {

@@ -52,6 +52,18 @@
   @include color(variables.$secondary)
 }
 
+@mixin text-danger {
+  @include color(variables.$danger)
+}
+
+@mixin text-success {
+  @include color(variables.$success)
+}
+
+@mixin text-success-contrast {
+  @include color(variables.$successContrast)
+}
+
 @mixin text-lightgrey {
   @include color(variables.$lightGrey)
 }
@@ -141,4 +153,11 @@
 
 @mixin text-no-decoration {
   text-decoration: none;
+}
+
+@mixin text-unselectable{
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }

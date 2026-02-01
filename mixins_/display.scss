@@ -1,7 +1,7 @@
 // ***********  DISPLAYS  *********** //
 
-@forward "displays/flex";
-@forward "displays/grid";
+@forward "./displays/flex";
+@forward "./displays/grid";
 
 @mixin block {
   display: block;

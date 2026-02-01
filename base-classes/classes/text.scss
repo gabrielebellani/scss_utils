@@ -1,4 +1,5 @@
 @use "../../mixins_/fonts";
+@use "../../variables";
 
 .no-wrap {
   @include fonts.text-nowrap
@@ -14,4 +15,60 @@
 
 .text-secondary {
   @include fonts.text-secondary;
+}
+
+.text-danger {
+  @include fonts.text-danger;
+}
+
+.text-success {
+  @include fonts.text-success;
+}
+
+.text-success-contrast {
+  @include fonts.text-success-contrast;
+}
+
+.text-xxs{
+  @include fonts.font-size(variables.$fs-xxs)
+}
+
+.text-xs{
+  @include fonts.font-size(variables.$fs-xs)
+}
+
+.text-s{
+  @include fonts.font-size(variables.$fs-s)
+}
+
+.text-m{
+  @include fonts.font-size(variables.$fs-m)
+}
+
+.text-l{
+  @include fonts.font-size(variables.$fs-l)
+}
+
+.text-xl{
+  @include fonts.font-size(variables.$fs-xl)
+}
+
+.text-x1l{
+  @include fonts.font-size(variables.$fs-x1l)
+}
+
+.text-x1-5l{
+  @include fonts.font-size(variables.$fs-x1-5l)
+}
+
+.text-x2l{
+  @include fonts.font-size(variables.$fs-x2l)
+}
+
+.text-x3l{
+  @include fonts.font-size(variables.$fs-x3l)
+}
+
+.text-bold{
+  @include fonts.font-weight(600)
 }

@@ -33,7 +33,7 @@ and then refer to the mixins like this:
 
 - [ ] Add more documentation
 - [ ] Add SASS support
-- [ ] Add more mixins and classes
+- [ ] Add more mixins and classes (__ongoing 🚀__)
 - [ ] Split imports
 
 If you want to contribute to this project, you can fork this repository and create a pull request.

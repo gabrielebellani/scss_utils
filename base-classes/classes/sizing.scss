@@ -187,3 +187,29 @@
 .h-fit {
   @include sizing.width-fit-content;
 }
+
+//sizes 100vh
+
+.h-100vh{
+  @include sizing.height(100vh);
+}
+
+.max-h-100vh{
+  @include sizing.max-height(100vh);
+}
+
+.min-h-100vh{
+  @include sizing.min-height(100vh);
+}
+
+.w-100vw{
+  @include sizing.width(100vw);
+}
+
+.max-w-100vw{
+  @include sizing.max-width(100vw);
+}
+
+.min-w-100vw{
+  @include sizing.min-width(100vw);
+}
